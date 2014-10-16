@@ -217,8 +217,5 @@ a:hover {
 	<div id="matches_img_main" align="center">
 		<img src="img_idx/mvp.png" width="900px" />
 	</div>
-	<div>
-	hello?
-	</div>
 </body>
 </html>
