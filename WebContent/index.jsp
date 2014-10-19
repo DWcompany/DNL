@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>메인</title>
 </head>
 <body>
 
@@ -46,7 +46,7 @@
 
 	<H2>TEAM & PLAYER OF MONTH</H2>
 
-	<TABLE border="1">
+	<table border="1">
 		<tbody>
 			<tr>
 				<td><a href="">팀 로고</a></td>
@@ -56,17 +56,17 @@
 				<td><a href=""> 소속팀 주요 포지션 이번달 평점 이번달 득점 </a></td>
 			</tr>
 		</tbody>
-	</TABLE>
+	</table>
 
 	<H2>
-		<a href="">NOTICES</a>
+		NOTICES
 	</H2>
 
 	<H3>
 		<a href="">더 보기</a>
 	</H3>
 
-	<TABLE>
+	<table>
 		<tbody>
 			<tr>
 				<td><a href="">번호</a></td>
@@ -75,18 +75,18 @@
 				<td><a href="">등록일자</a></td>
 			</tr>
 		</tbody>
-	</TABLE>
+	</table>
 
 
 	<H2>
-		<a href="all_board/all_board_list.jsp">COMMUNITY</a>
+		COMMUNITY
 	</H2>
 
 	<H3>
 		<a href="all_board/all_board_list.jsp">더 보기</a>
 	</H3>
 
-	<TABLE>
+	<table>
 		<tbody>
 			<tr>
 				<td><a href="">번호</a></td>
@@ -95,15 +95,6 @@
 				<td><a href="">등록일자</a></td>
 			</tr>
 		</tbody>
-	</TABLE>
-
-
-
-
-
-
-
-
-
+	</table>
 </body>
 </html>

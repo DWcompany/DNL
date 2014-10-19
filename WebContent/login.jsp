@@ -16,7 +16,7 @@
 
 		checkName = (String) session.getAttribute("userName");
 
-		if (checkName == null) // 로그인 정보 불일치
+		if (checkName == null) // 로그인 정보 불일치 or 로그아웃상태
 		{
 	%>
 
@@ -25,7 +25,7 @@
 	<form method="post" action="member/member_id_check.jsp">
 		아이디<input type="text" name="mid" />
 		<!-- 아이디입력박스 -->
-		비밀번호<input type="password" name="pwd"/>
+		비밀번호<input type="password" name="pwd" />
 		<!-- 비밀번호입력박스 -->
 		<br> <br> <input type="submit" name="submit" value="로그인" />
 		<br> <br> <input type="checkbox" name="autologin">
@@ -39,19 +39,23 @@
 	</ul>
 
 	<%
-		} else {
+		} else { //로그인 성공!
 
 			checkId = (String) session.getAttribute("userId");
 	%>
 
 
 	<h2>WELCOME</h2>
-	<%=checkName%>(<%=checkId%>)님 반갑습니다!
+	<%=checkName%>(<%=checkId%>)님, 환영합니다!
 	<br>
-	<br>
-	<a href="logout.jsp">로그아웃</a>
-	<br>
-	<br>
+
+	<ul>
+		<li>소속팀 :</li>
+		<li>평점 :</li>
+		<li><a href="member/member_update.jsp">개인정보 수정</a></li>
+		<li><a href="message/message_list.jsp">메세지함(0)</a></li>
+		<li><a href="logout.jsp">로그아웃</a></li>
+	</ul>
 
 
 	<%

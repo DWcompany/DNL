@@ -13,7 +13,7 @@
 	MultipartRequest multi = null;
 
 	int sizeLimit = 10 * 1024 * 1024; // 10메가입니다.
-	String savePath = request.getRealPath("/img_all_board"); //
+	String savePath = request.getRealPath("/all_board/img_all_board"); //
 
 	try {
 
