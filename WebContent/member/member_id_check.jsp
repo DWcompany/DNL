@@ -44,7 +44,7 @@
 
 					if (loginID.equals(mid) && loginPWD.equals(pwd)) {
 						session.setAttribute("userName", name);
-						session.setAttribute("userId", mid);
+						session.setAttribute("userID", mid);
 						response.sendRedirect("../index.jsp");
 					} else {
 						response.sendRedirect("../index.jsp");

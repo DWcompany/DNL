@@ -20,17 +20,21 @@
 		{
 	%>
 
-	<h2>LOGIN</h2>
+	<h3>LOGIN</h3>
 
 	<form method="post" action="member/member_id_check.jsp">
-		아이디<input type="text" name="mid" />
-		<!-- 아이디입력박스 -->
-		비밀번호<input type="password" name="pwd" />
-		<!-- 비밀번호입력박스 -->
-		<br> <br> <input type="submit" name="submit" value="로그인" />
-		<br> <br> <input type="checkbox" name="autologin">
-		자동로그인
-		<!-- 자동로그인체크 -->
+		<fieldset>
+		<legend>로그인 필드</legend>
+		<label>아이디</label>
+		<input type="text" name="mid" />
+		<label>비밀번호</label>
+		<input type="password" name="pwd" />
+		<br> <br> 
+		<input type="submit" name="submit" value="로그인" />
+		<br> <br>
+		<label>자동로그인</label>
+		 <input type="checkbox" name="autologin">
+		</fieldset>
 	</form>
 
 	<ul>
@@ -41,11 +45,11 @@
 	<%
 		} else { //로그인 성공!
 
-			checkId = (String) session.getAttribute("userId");
+			checkId = (String) session.getAttribute("userID");
 	%>
 
 
-	<h2>WELCOME</h2>
+	<h3>WELCOME</h3>
 	<%=checkName%>(<%=checkId%>)님, 환영합니다!
 	<br>
 
