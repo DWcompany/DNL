@@ -1,0 +1,57 @@
+@CHARSET "UTF-8";
+
+.clearfix:after
+{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+
+#header {
+	height: 70px;
+}
+
+#visual {
+	height: 171px;
+	background: #313131;
+}
+
+#body {
+	min-height: 300px; /* 최소 높이 정해주고 가변! */
+}
+
+#footer {
+	height: 100px;
+	background: #313131;
+}
+
+.content-wrapper
+{
+	min-height:inherit; /* 부모꺼 상속 받음 */
+	height:inherit;
+	width:960px;
+	margin:auto;
+}
+
+#aside
+{
+	min-height : inherit;
+	width : 170px; /* 205-35 */
+	float : left; /* 블록을 옆으로 쌓는다 */
+	
+	padding-left : 35px;
+	padding-top : 45px;
+}
+
+#main
+{
+	min-height : inherit;
+	width : 720px; /* 755-35 */
+	float : left; /* 블록을 옆으로 쌓는다 */
+	
+	padding-left : 35px;
+	padding-top : 45px;
+}
