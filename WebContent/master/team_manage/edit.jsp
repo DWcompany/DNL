@@ -5,70 +5,74 @@
 <head>
 <meta charset="UTF-8">
 <title>Team Edit</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<%@include file="/header.jsp"%>
+	<div id="center">
+
+		<%@include file="/header.jsp"%>
 
 
-	<div id="body">
-		<div class="content-wrapper">
-			<main id="main">
+		<div id="body">
 
-			<h2>TEAM EDIT</h2>
+			<div class="title">
 
-			<h3>수정할 팀 정보</h3>
-			<form>
-				<fieldset>
-					<legend>팀 수정 필드</legend>
-					<table>
-						<thead>
-							<tr>
-								<th>CODE</th>
-								<th>LOGO</th>
-								<th>ADDRESS</th>
-								<th>ID_MANAGER</th>
-								<th>BIRTHDAY</th>
-								<th>ID_MASTER</th>
-								<th>OK_DAY</th>
-								<th>OK</th>
+				<h2>TEAM EDIT</h2>
+			</div>
+			<div class="contents">
+				<h3>수정할 팀 정보</h3>
+				<form>
+					<fieldset>
+						<legend>팀 수정 필드</legend>
+						<table>
+							<thead>
+								<tr>
+									<th>CODE</th>
+									<th>LOGO</th>
+									<th>ADDRESS</th>
+									<th>ID_MANAGER</th>
+									<th>BIRTHDAY</th>
+									<th>ID_MASTER</th>
+									<th>OK_DAY</th>
+									<th>OK</th>
 
-							</tr>
-						</thead>
+								</tr>
+							</thead>
 
-						<tbody>
+							<tbody>
 
-							<tr>
-								<td><label>팀코드</label><input type="text"></td>
-								<td><label>팀로고</label><input type="text"></td>
-								<td><label>활동지역</label><input type="file"></td>
-								<td><label>매니저아이디</label><input type="text"></td>
-								<td><label>등록일</label><input type="text"></td>
-								<td><label>승인자아이디</label><input type="text"></td>
-								<td><label>승인일</label><input type="text"></td>
-								<td><label>승인여부</label><input type="text"></td>
-							</tr>
+								<tr>
+									<td><label>팀코드</label><input type="text"></td>
+									<td><label>팀로고</label><input type="text"></td>
+									<td><label>활동지역</label><input type="file"></td>
+									<td><label>매니저아이디</label><input type="text"></td>
+									<td><label>등록일</label><input type="text"></td>
+									<td><label>승인자아이디</label><input type="text"></td>
+									<td><label>승인일</label><input type="text"></td>
+									<td><label>승인여부</label><input type="text"></td>
+								</tr>
 
-						</tbody>
+							</tbody>
 
-					</table>
-				</fieldset>
-			</form>
+						</table>
+					</fieldset>
+				</form>
 
-			
 
-			<p>
-				<a href="list.jsp">수정</a>
-			</p>
 
-			<p>
-				<a href="list.jsp">취소</a>
-			</p>
-			
+				<p>
+					<a href="list.jsp">수정</a>
+				</p>
 
-			</main>
+				<p>
+					<a href="list.jsp">취소</a>
+				</p>
+
+			</div>
+
 		</div>
+		<%@include file="/footer.jsp"%>
 	</div>
-	<%@include file="/footer.jsp"%>
-
 </body>
 </html>

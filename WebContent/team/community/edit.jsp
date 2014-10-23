@@ -5,10 +5,19 @@
 <head>
 <meta charset="UTF-8">
 <title>team_community_edit</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/modernizr.js"></script>
 </head>
 <body>
-<%@ include file="/header.jsp" %>
-		<h2>이미지 게시판 글 수정</h2>
+	<div id="center">
+		<header id="header"></header>
+		<main id="main">
+		<div class="title">
+		<h2 >이미지 게시판 글 수정</h2>
+		</div>
+		<div class="contents">
+		<h3>이미지 게시판 글 수정 폼</h3>
 		<form>
 			<table>
 				<tr>
@@ -33,9 +42,11 @@
 				</tr>
 			</table>
 			<a href="list.jsp">수정</a>
-			<a href="list.jps">취소</a>
+			<a href="list.jsp">취소</a>
 		</form>
-
-<%@ include file ="/footer.jsp" %>
+	</div>
+	</main>
+	<footer id="footer"></footer>
+	</div>
 </body>
 </html>

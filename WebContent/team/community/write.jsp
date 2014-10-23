@@ -5,11 +5,16 @@
 <head>
 <meta charset="UTF-8">
 <title>team_community_write</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/modernizr.js"></script>
 </head>
 <body>
-<%@ include file="/header.jsp" %>
-
-		<h2>이미지 게시판 글쓰기</h2>
+	<div id="center">
+		<header id="header"></header>
+		<div  class="title"><h2>이미지 게시판 글쓰기</h2></div>
+		<div class="contents">
+		<h3>이미지 게시판 글쓰기 폼</h3>
 		<form>
 			<table>
 				<tr>
@@ -36,7 +41,8 @@
 			<a href="list.jsp">등록</a>
 			<a href="list.jsp">뒤로</a>
 		</form>
-
-<%@ include file ="/footer.jsp" %>
+		</div>
+		<footer id="footer"></footer>
+</div>
 </body>
 </html>

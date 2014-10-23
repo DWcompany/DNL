@@ -5,30 +5,41 @@
 <head>
 <meta charset="UTF-8">
 <title>Notice_Write</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
-	<%@include file="/header.jsp"%>
+	<div id="center">
 
 
-	<h1>NOTICE</h1>
+		<%@include file="/header.jsp"%>
 
-	<h2>공지사항 작성 폼</h2>
+		<div class="title">
 
-	<form>
-		<fieldset>
-			<legend>게시판 글쓰기 필드</legend>
+			<h1>NOTICE</h1>
+		</div>
 
-			<label>제목</label> <input type="text" /><br/>
-			<label>파일첨부</label> <input type="text" /> <br/>
-			<input type="button" value="파일찾기" /> <br/>
-			<label>글 내용</label>	<textarea></textarea><br/>
-			<label>비밀번호</label> <input type="password" /><br/>
-			<input type="button" value="등록" onclick="location.href='list.jsp'"/>
-			<input type="button" value="취소"onclick="location.href='list.jsp'" />
-		</fieldset>
-	</form>
+		<div class="contents">
+			<h2>공지사항 작성 폼</h2>
+
+			<form>
+				<fieldset>
+					<legend>게시판 글쓰기 필드</legend>
+
+					<label>제목</label> <input type="text" /><br /> <label>파일첨부</label>
+					<input type="text" /> <br /> <input type="button" value="파일찾기" />
+					<br /> <label>글 내용</label>
+					<textarea></textarea>
+					<br /> <label>비밀번호</label> <input type="password" /><br /> <input
+						type="button" value="등록" onclick="location.href='list.jsp'" /> <input
+						type="button" value="취소" onclick="location.href='list.jsp'" />
+				</fieldset>
+			</form>
+
+		</div>
 		<%@include file="/footer.jsp"%>
-	
+	</div>
+
 </body>
 </html>

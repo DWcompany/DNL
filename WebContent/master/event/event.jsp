@@ -5,22 +5,29 @@
 <head>
 <meta charset="UTF-8">
 <title>Event</title>
+
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<%@include file="/header.jsp"%>
+	<div id="center">
 
-	<div id="body">
-		<div class="content-wrapper">
-			<main id="main">
+		<%@include file="/header.jsp"%>
 
-			<h2>EVENT</h2>
-			
-			<p>추후 이벤트 오픈 예정입니다.</p>
+		<div id="body">
 
-			</main>
+			<div class="title">
+
+				<h2>EVENT</h2>
+			</div>
+			<div class="contents">
+
+				<p>추후 이벤트 오픈 예정입니다.</p>
+			</div>
+
 		</div>
+		<%@include file="/footer.jsp"%>
 	</div>
-	<%@include file="/footer.jsp"%>
 
 </body>
 </html>

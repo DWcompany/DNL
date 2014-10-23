@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>member_ad_detail</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<h1>선수 홍보</h1>

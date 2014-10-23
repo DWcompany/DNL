@@ -5,12 +5,15 @@
 <head>
 <meta charset="UTF-8">
 <title>team_manage_edit</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/DNL/js/modernizr.js"></script>
 </head>
 <body>
-
-	<%@include file="/header.jsp"%>
-
-	<h2>MODIFY TEAM</h2>
+<div id="center">
+	<header id="header"></header>
+	<div class="title"><h2>MODIFY TEAM</h2></div>
+	<div class="contents">
 		<h3>팀수정 폼</h3>
 			<table>
 				<tr>
@@ -34,8 +37,8 @@
 			</table>
 			<a href="../community/list.jsp">확인</a>	
 			<a href="../community/list.jsp">취소</a>
-			
-				<%@include file="/footer.jsp"%>
-				
+			</div>
+			<footer id="footer"></footer>
+		</div>		
 </body>
 </html>

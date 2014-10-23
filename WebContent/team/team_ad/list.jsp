@@ -5,12 +5,17 @@
 <head>
 <meta charset="UTF-8">
 <title>team_ad_list</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="/DNL/js/modernizr.js"></script>
 </head>
 <body>
-	<%@include file="/header.jsp"%>
-
-	 		<h2>팀홍보</h2>
-	 			<h3>팀 홍보 사진목록</h3>
+	<div id="center">
+		<header id="header"></header>
+	 		<div class="title"><h2>INFORM</h2></div>
+	 			<div class="contents">
+	 			<h3>팀 홍보</h3>
+	 			<h4>팀 홍보 사진목록</h4>
 		 		<p><a href="">필터링</a></p>
 		 		<dl>
 		 			<dt><a href="detail.jsp">팀사진1</a></dt>
@@ -44,8 +49,9 @@
 		         </p>
 		         
 		         <p><a href="write.jsp">작성</a></p>
-		         
-		         	<%@include file="/footer.jsp"%>
+		         </div>
+	<footer id="footer"></footer>
+</div>
 		         
 </body>
 </html>

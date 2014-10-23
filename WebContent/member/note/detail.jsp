@@ -1,13 +1,20 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <title>Insert title here</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="../js/modernizr.js"></script>
 </head>
 <body>
-	<h3>게시판 보기</h3>
+
+	<main id="detail_body">
+
+
 	<form action="../note/list.jsp" method="post">
 		<table>
 			<tr>
@@ -24,7 +31,14 @@
 			</tr>
 		</table>
 		<input type="submit" value="확인">
+		<input type="button" value="답장">
 	</form>
+
+	</main>
+
+
+
 
 </body>
 </html>
+

@@ -1,57 +1,73 @@
 @CHARSET "UTF-8";
 
-.clearfix:after
-{
-	content:".";
-	display:block;
-	clear:both;
-	visibility:hidden;
-	line-height:0;
-	height:0;
+.clearfix {
+	overflow: auto;
+	zoom: 1;
+}
+
+#center {
+	width: 950px;
+	margin: auto;
 }
 
 #header {
-	height: 70px;
-}
-
-#visual {
-	height: 171px;
-	background: #313131;
+	height: 200px;
+	/* background: red; */
 }
 
 #body {
-	min-height: 300px; /* 최소 높이 정해주고 가변! */
+	min-height: 500px; /* 최소 높이 정해주고 가변! */
+	/* background: orange; */
+	border-top: 1px solid #FFFFFF;
 }
 
 #footer {
 	height: 100px;
-	background: #313131;
+	/* background: yellow; */
+	border-top: 1px solid #FFFFFF;
 }
 
-.content-wrapper
-{
-	min-height:inherit; /* 부모꺼 상속 받음 */
-	height:inherit;
-	width:960px;
-	margin:auto;
+.title {
+	height: 40px;
+	font-family: 맑은 고딕;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-bottom: 0px;
+	font-size: 30px;
 }
 
-#aside
-{
-	min-height : inherit;
-	width : 170px; /* 205-35 */
-	float : left; /* 블록을 옆으로 쌓는다 */
-	
-	padding-left : 35px;
-	padding-top : 45px;
+.title h1 {
+	float: left;
 }
 
-#main
-{
-	min-height : inherit;
-	width : 720px; /* 755-35 */
-	float : left; /* 블록을 옆으로 쌓는다 */
-	
-	padding-left : 35px;
-	padding-top : 45px;
+.title h2 {
+	float: left;
 }
+
+.title h3 {
+	display: none;
+}
+
+.title p {
+	float: right;
+	font-size: 10px;
+	margin-right: 5px;
+	margin-top: 20px;
+}
+
+.contents {
+	min-height: 100px;
+	font-family: 맑은 고딕;
+	border-top: 4px solid #807480;
+	padding-top: 10px;
+}
+
+.contents h3 {
+	visibility: hidden;
+}
+
+/* .content-wrapper {
+	min-height: inherit; 부모꺼 상속 받음
+	height: inherit;
+	margin: auto;
+} */

@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>member_ad_write</title>
+<link href="../../css/reset.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 
