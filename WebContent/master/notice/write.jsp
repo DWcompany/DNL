@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,39 +8,82 @@
 <title>Notice_Write</title>
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_header.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_footer.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_notice_write.css" rel="stylesheet"
+	type="text/css">
+
 </head>
 <body>
-
 	<div id="center">
-
 
 		<%@include file="/header.jsp"%>
 
+		<main id="body"> 
+<%
+ 	int code = Integer.parseInt(request.getParameter("code"));
+ %>
 		<div class="title">
-
-			<h1>NOTICE</h1>
+			<H1>NOTICE</H1>
 		</div>
-
 		<div class="contents">
-			<h2>공지사항 작성 폼</h2>
 
-			<form>
+			<form method="post" action="insert.jsp" enctype="multipart/form-data">
 				<fieldset>
-					<legend>게시판 글쓰기 필드</legend>
+					<legend class="hidden">공지사항 내용 입력</legend>
 
-					<label>제목</label> <input type="text" /><br /> <label>파일첨부</label>
-					<input type="text" /> <br /> <input type="button" value="파일찾기" />
-					<br /> <label>글 내용</label>
-					<textarea></textarea>
-					<br /> <label>비밀번호</label> <input type="password" /><br /> <input
-						type="button" value="등록" onclick="location.href='list.jsp'" /> <input
-						type="button" value="취소" onclick="location.href='list.jsp'" />
+					<table id="notice-write-board">
+						<tr class="notice-write-board-row">
+							<th
+								class="notice-write-board-cell code notice-write-board-header">글번호</th>
+							<td class="notice-write-board-cell code"><%=code%></td>
+						</tr>
+
+						<tr class="notice-write-board-row">
+							<th
+								class="notice-write-board-cell titles notice-write-board-header">제목</th>
+							<td class="notice-write-board-cell titles"><input type=text
+								name="title" style="width: 250px" /></td>
+						</tr>
+
+						<tr class="notice-write-board-row">
+							<th
+								class="notice-write-board-cell content notice-write-board-header">내용</th>
+							<td class="notice-write-board-cell content"><textarea
+									rows="5" cols="30" name="content"></textarea></td>
+						</tr>
+
+						<tr class="notice-write-board-row">
+							<th
+								class="notice-write-board-cell photo notice-write-board-header">첨부</th>
+							<td class="notice-write-board-cell photo"><input type="file"
+								name="photo" /></td>
+						</tr>
+
+						<tr class="notice-write-board-row">
+							<th class="notice-write-board-cell pwd notice-write-board-header">비밀번호</th>
+							<td class="notice-write-board-cell pwd"><input type=password
+								name="password" style="width: 250px" /></td>
+						</tr>
+
+						<tr class="notice-write-board-row">
+							<th
+								class="notice-write-board-cell writer notice-write-board-header">작성자</th>
+							<td class="notice-write-board-cell writer"><%=checkID%></td>
+						</tr>
+
+					</table>
+
+					<input type=hidden name="code" value=<%=code%> /> <br> <input
+						type=submit value="등록" /> <input type=button value="취소"
+						onclick="location.href='list.jsp'" />
+
 				</fieldset>
 			</form>
-
 		</div>
+		</main>
 		<%@include file="/footer.jsp"%>
-	</div>
 
+	</div>
 </body>
 </html>

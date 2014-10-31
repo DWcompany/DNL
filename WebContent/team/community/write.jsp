@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div id="center">
-		<header id="header"></header>
+		<%@include file="/header.jsp"%>
 		<div  class="title"><h2>이미지 게시판 글쓰기</h2></div>
 		<div class="contents">
 		<h3>이미지 게시판 글쓰기 폼</h3>
@@ -38,11 +38,11 @@
 					<td><input type="text" name="pwd"></td>
 				</tr>
 			</table>
-			<a href="list.jsp">등록</a>
+			<a href="list.jsp"><img src="../../images/btn_enroll.png"></a>
 			<a href="list.jsp">뒤로</a>
 		</form>
 		</div>
-		<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 </div>
 </body>
 </html>

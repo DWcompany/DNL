@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="center">
-	<header id="header"></header>
+		<%@include file="/header.jsp"%>
 	<div class="title"><h2>MODIFY TEAM</h2></div>
 	<div class="contents">
 		<h3>팀수정 폼</h3>
@@ -19,7 +19,7 @@
 				<tr>
 					<td>팀이름</td>
 					<td><input type="text"></td>
-					<td><a href="">중복확인</a></td>
+					<td><a href="">중복확인</a></td><!-- 필요 -->
 				</tr>
 				<tr>
 					<td>팀소개</td>
@@ -35,10 +35,10 @@
 				</tr>
 				
 			</table>
-			<a href="../community/list.jsp">확인</a>	
-			<a href="../community/list.jsp">취소</a>
+			<a href="../community/list.jsp"><img src="../../images/btn_confirm.png"></a>	
+			<a href="../community/list.jsp"><img src="../../images/btn_cancel.png"></a>
 			</div>
-			<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 		</div>		
 </body>
 </html>

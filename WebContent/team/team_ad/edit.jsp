@@ -49,9 +49,8 @@
 		</ul>
 		</div>
 	<textarea rows="" cols=""></textarea>
-	<a href="list.jsp">완료</a>
 		</div>
-	<br>
+	<a href="list.jsp"><img src="../../images/btn_complete.png"></a>
 	<!-- 쓸글들 -->
 </body>
 </html>

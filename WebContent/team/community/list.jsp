@@ -13,7 +13,8 @@
 </head>
 <body>
 	<div id="center">
-		<header id="header"></header>
+		<%@include file="/header.jsp"%>
+
 				<main id="body">
 					<div  class="title"><h2>MY TEAM</h2></div>
 				<div class="clearfix">
@@ -55,11 +56,11 @@
 									<a href="write.jsp">팀 사진 게시물 등록 버튼</a>
 								</dt>
 							</dl>
-				<a href="">팀 탈퇴하기</a>
+				<a class="" href=""><img src="../../images/btn_"></a><!-- 탈퇴-->
 				</div>
 				</div>
 		</main>
-		<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 	</div>
 </body>
 </html>

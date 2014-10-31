@@ -21,8 +21,8 @@
 		<li>평균 평점</li>	
 	</ul>
 	<a href="formation.jsp">영입</a>
-	<a href="formation.jsp">퇴출</a>
-	<a href="formation.jsp">확인</a>
+	<a href="formation.jsp"><img src="../../images/btn_out.png"></a>
+	<a href="formation.jsp"><img src="../../images/btn_confirm.png"></a>
 	
 </body>
 </html>

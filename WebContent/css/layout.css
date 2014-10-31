@@ -1,5 +1,9 @@
 @CHARSET "UTF-8";
 
+.hidden {
+	display: none;
+}
+
 .clearfix {
 	overflow: auto;
 	zoom: 1;
@@ -11,29 +15,36 @@
 }
 
 #header {
-	height: 200px;
-	/* background: red; */
+	height: 224px;
+	display: inline-block;
+	/* background: #979797; */
 }
 
 #body {
-	min-height: 500px; /* 최소 높이 정해주고 가변! */
+	min-height: 700px; /* 최소 높이 정해주고 가변! */
 	/* background: orange; */
+	/* margin-top: 50px; */
 	border-top: 1px solid #FFFFFF;
 }
 
 #footer {
-	height: 100px;
-	/* background: yellow; */
-	border-top: 1px solid #FFFFFF;
+	height: 180px;
+	border-top: 3px solid #363636;
+	border-bottom: 10px solid #000000;
+	padding: 20px;
+	margin-bottom: 40px;
+	background: #f6f6f6;
+	margin-top: 40px;
 }
 
 .title {
-	height: 40px;
+	height: 60px;
 	font-family: 맑은 고딕;
 	font-weight: bold;
 	padding-left: 5px;
 	padding-bottom: 0px;
-	font-size: 30px;
+	font-size: 40px;
+	margin-top: 50px;
 }
 
 .title h1 {
@@ -44,26 +55,18 @@
 	float: left;
 }
 
-.title h3 {
-	display: none;
-}
-
 .title p {
 	float: right;
 	font-size: 10px;
 	margin-right: 5px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 .contents {
 	min-height: 100px;
 	font-family: 맑은 고딕;
-	border-top: 4px solid #807480;
-	padding-top: 10px;
-}
-
-.contents h3 {
-	visibility: hidden;
+	border-top: 2px solid #363636;
+	padding-top: 30px;
 }
 
 /* .content-wrapper {

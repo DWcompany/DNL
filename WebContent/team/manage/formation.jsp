@@ -8,12 +8,14 @@
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../../css/layout.css" rel="stylesheet" type="text/css">
 <link href="../../css/style_team_manage.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_player_center.css" rel="stylesheet" type="text/css">
+<link href="/DNL/css/style_header.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/DNL/js/modernizr.js"></script>
 </head>
 <body>
 	<div id="center">
-		<header id="header"></header>
-		<main id="main ">
+		<%@include file="/header.jsp"%>
+		<main id="main">
 		<div class="title"><h2>FORMATION</h2></div>
 		<div class="contents clearfix">
 			<div id="formation">
@@ -56,25 +58,40 @@
 						<dt><a href="">후보선수 목록8</a></dt>
 					</dl>
 					</div>
+					<a href=""><img src="../../images/btn_save.png"></a>
 				</div>
 		<div class="title"><h2>PLAYERS</h2></div>
-			<div class="contents"><h3>팀선수 목록</h3>
-			<a href="player_search.jsp">선수검색</a>
-				<dl>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-					<dt><a href="player_profile.jsp">선수사진</a></dt>
-				</dl>
+			<div class="contents player-padding">
+ 			<h3 class="hidden">팀선수 목록</h3>
+				<ul class="clearfix">
+					<li class=content-player><a href="player_search.jsp" ><img src="../../images/player_plus.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player1.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player2.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player3.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player5.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player1.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player2.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player3.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player5.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player1.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player2.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player3.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player5.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player1.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player2.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player3.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player4.png"></a></li>
+					<li class="content-player"><a href="player_profile.jsp" ><img src="../../images/player5.png"></a></li>
+				</ul>
 				</div>
 				</main>
-		<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 	</div>	
 </body>
 </html>

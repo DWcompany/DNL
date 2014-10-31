@@ -11,7 +11,7 @@
 </head>
 <body>
 <div id="center">
-	<header id="header"></header>
+		<%@include file="/header.jsp"%>
 <main id="main">
 	<div class="title"><h2>이미지 게시판 글보기</h2></div>
 		<div class="contents">
@@ -35,13 +35,13 @@
 						<td></td>
 					</tr>
 				</table>
-				<input type="button" value="수정" onclick="location.href='edit.jsp'">
-				<input type="button" value="삭제" onclick="location.href='list.jsp'">
+				<a href="edit.jsp"><img src="../../images/btn_edit.png"></a>
+				<a href="list.jsp"><img src="../../images/btn_delete.png"></a>
 				<input type="button" value="뒤로" onclick="location.href='list.jsp'">
 			</form>
 		</div>
 </main>
-	<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 </div>
 
 </body>

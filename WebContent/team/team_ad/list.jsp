@@ -7,50 +7,65 @@
 <title>team_ad_list</title>
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<link href="/DNL/css/style_header.css" rel="stylesheet" type="text/css">
+<link href="/DNL/css/style_footer.css" rel="stylesheet" type="text/css">
+
+<link href="../../css/style_team_center.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/DNL/js/modernizr.js"></script>
 </head>
 <body>
 	<div id="center">
-		<header id="header"></header>
-	 		<div class="title"><h2>INFORM</h2></div>
-	 			<div class="contents">
-	 			<h3>팀 홍보</h3>
-	 			<h4>팀 홍보 사진목록</h4>
-		 		<p><a href="">필터링</a></p>
-		 		<dl>
-		 			<dt><a href="detail.jsp">팀사진1</a></dt>
-		 			<dt><a href="detail.jsp">팀사진2</a></dt>
-		 			<dt><a href="detail.jsp">팀사진3</a></dt>
-		 			<dt><a href="detail.jsp">팀사진4</a></dt>
-		 			<dt><a href="detail.jsp">팀사진5</a></dt>
-		 			<dt><a href="detail.jsp">팀사진6</a></dt>
-		 			<dt><a href="detail.jsp">팀사진7</a></dt>
-		 			<dt><a href="detail.jsp">팀사진8</a></dt>
-		 			<dt><a href="detail.jsp">팀사진9</a></dt>
-		 			<dt><a href="detail.jsp">팀사진10</a></dt>
-		 			<dt><a href="detail.jsp">팀사진11</a></dt>
-		 			<dt><a href="detail.jsp">팀사진12</a></dt>
-		 			<dt><a href="detail.jsp">팀사진13</a></dt>
-		 			<dt><a href="detail.jsp">팀사진14</a></dt>
-		 			<dt><a href="detail.jsp">팀사진15</a></dt>
-		 			<dt><a href="detail.jsp">팀사진16</a></dt>
-		 		</dl>
+		<%@include file="/header.jsp"%>
+	 		<div class="title"><h2>INFORM</h2>	 		
+		 		<p class="photo_size"><a href=""><img src="../../images/btn_filter.png"></a></p>
+	 		</div>
+	 			<div class="contents team-padding">
+	 			<h3 class="hidden ">팀 홍보</h3>
+	 			<h4 class="hidden">팀 홍보 사진목록</h4>
+		 		<ul class="clearfix">
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team1.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team2.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team3.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team4.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team5.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team6.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team1.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team2.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team3.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team4.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team5.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team6.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team1.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team2.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team3.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team4.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team5.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team6.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team1.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team2.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team3.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team4.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team5.png"></a></li>
+		 			<li class="content-team"><a href="detail.jsp"><img src="../../images/team6.png"></a></li>
+		 		</ul>
 		 	
-	 		<h3>팀 홍보목록 페이지</h3>
-	 			<p>
-            		<a href=""><span>이전</span></a>
+	 		<h3 >팀 홍보목록 페이지</h3>
+	 			<nav>
+	 			<p class="content-text">
+            		<a href=""><span><img src="../../images/btn_prev.png"></span></a>
          		</p>
          		<ul>
-           			 <li><a href="">1</a></li>
-           			 <li><a href="">2</a></li>
+           			 <li class="content-text"><a href="">1</a></li>
+           			 <li class="content-text"><a href="">2</a></li>
         	    </ul>
-		         <p>
-		            <a href=""><span>다음</span></a>
+		         <p class="content-text">
+		            <a href=""><span><img src="../../images/btn_next.png"></span></a>
 		         </p>
+		         </nav>
+		         <p class=""><a href="write.jsp"><img src="../../images/btn_write.png"></a></p>
 		         
-		         <p><a href="write.jsp">작성</a></p>
 		         </div>
-	<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 </div>
 		         
 </body>

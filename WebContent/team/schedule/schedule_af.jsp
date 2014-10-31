@@ -7,430 +7,100 @@
 <title>Insert title here</title>
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_footer.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_header.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_match.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../js/modernizr.js"></script>
 </head>
 <body>
 	<div id="center">
-		<header id="header">
-			<!-- <h1>
-				<a href="/DNL/index.jsp"><img src="" alt="동네스리가" /></a>
-			</h1>
-
-			<section>
-
-				<h1>머리말</h1>
-
-				<nav>
-					<h1>기본메뉴</h1>
-					<ul>
-						<li><a href="/DNL/master/notice/list.jsp">NOTICE</a></li>
-						<li><a href="/DNL/member/community/list.jsp">COMMUNITY</a></li>
-						<li><a href="/DNL/member/qna/list.jsp">HELP</a></li>
-						<li><a href="/DNL/master/company/company.jsp">COMPANY</a></li>
-					</ul>
-				</nav>
-
-				<nav>
-					<h1>메인메뉴</h1>
-
-					<ul>
-						<li>
-							<h2>로그인 메뉴</h2> LOGIN
-							<ul>
-								<li>
-
-									<h3>LOGIN(로그인 전)</h3>
-
-									<h4>로그인 폼</h4>
-									<form>
-										<fieldset>
-											<legend>로그인 필드</legend>
-											<label>아이디</label> <input type="text" name="id" /> <label>비밀번호</label>
-											<input type="password" name="pwd" /> <br> <br> <input
-												type="submit" name="submit" value="로그인" /> <br> <br>
-											<label>자동로그인</label> <input type="checkbox" name="autologin">
-										</fieldset>
-									</form>
-
-									<h4>가입/비번찾기</h4>
-									<ul>
-										<li><a href="/DNL/member/find.jsp">아이디/비밀번호 찾기</a></li>
-										<li><a href="/DNL/member/join.jsp">회원가입</a></li>
-									</ul>
+		<%@include file="/header.jsp"%>
 
 
-
-
-									<h3>WELCOME(로그인 후)</h3>
-
-									<h4>로그인 회원 정보</h4>
-
-									<p>곽동우(kdw4803)님, 환영합니다!</p>
-
-									<ul>
-										<li>소속팀 :</li>
-										<li>평점 :</li>
-										<li><a href="/DNL/member/edit.jsp">개인정보 수정</a></li>
-										<li><a href="/DNL/member/note/list.jsp">메세지함(0)</a></li>
-										<li><a href="/DNL/index.jsp">로그아웃</a></li>
-									</ul>
-
-									<h4>회원/팀 목록(관리자만)</h4>
-									<ul>
-										<li><a href="/DNL/master/member_manage/list.jsp">회원목록</a></li>
-										<li><a href="/DNL/master/team_manage/list.jsp">팀목록</a></li>
-									</ul>
-								<li>
-							</ul>
-						</li>
-
-						<li>
-							<h2>팀 메뉴</h2> TEAM
-							<ul>
-								<li>
-
-									<h3>MY TEAM(팀가입 전)</h3>
-
-									<p>로그인 후 이용 가능합니다.(로그인 전)</p>
-
-									<p>
-										<a href="/DNL/member/team/join.jsp">현재 소속팀이 없습니다.(팀가입 전)</a>
-									</p>
-
-									<h3>MY TEAM(팀가입 후)</h3>
-
-									<ul>
-										<li><a href="/DNL/team/community/list.jsp">팀로고</a></li>
-										<li>FC동우</li>
-										<li>10승 5무 1패</li>
-										<li>20득점 20실점</li>
-										<li>현재 지역 순위 : 2위</li>
-										<li><a href="/DNL/team/manage/edit.jsp">팀 정보 수정</a></li>
-										<li><a href="/DNL/team/manage/formation.jsp">팀 전술 관리</a></li>
-										<li><a href="/DNL/team/schedule/schedule_bf.jsp">팀 일정
-												관리</a></li>
-									</ul>
-
-									<h3>RANKING</h3>
-
-									<h4>더보기</h4>
-									<p>
-										<a href="/DNL/member/team/ranking.jsp">더보기</a>
-									</p>
-
-									<h4>랭킹 목록 페이지</h4>
-									<p>
-										<a href="/DNL/member/team/ranking.jsp">◀</a>
-									</p>
-									<p>서울시 서대문구</p>
-									<p>
-										<a href="/DNL/member/team/ranking.jsp">▶</a>
-									</p>
-
-									<h4>랭킹 목록</h4>
-									<table>
-										<thead>
-											<tr>
-												<th>순위</th>
-												<th>팀명</th>
-												<th>경기수</th>
-												<th>승</th>
-												<th>무</th>
-												<th>패</th>
-												<th>득점</th>
-												<th>실점</th>
-												<th>득실차</th>
-												<th>승점</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr>
-												<td>1</td>
-												<td>FC동우</td>
-												<td>21</td>
-												<td>10</td>
-												<td>1</td>
-												<td>10</td>
-												<td>20</td>
-												<td>10</td>
-												<td>+10</td>
-												<td>31</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>쌍용</td>
-												<td>20</td>
-												<td>9</td>
-												<td>1</td>
-												<td>10</td>
-												<td>19</td>
-												<td>11</td>
-												<td>+8</td>
-												<td>28</td>
-											</tr>
-										</tbody>
-
-									</table>
-								<li>
-							</ul>
-						</li>
-
-						<li><h2>매칭 메뉴</h2> MATCH
-							<ul>
-								<li>
-
-									<h3>CHALLENGE(팀가입 전)</h3>
-
-									<p>로그인 후 이용 가능합니다.(로그인 전)</p>
-
-									<p>
-										<a href="/DNL/member/team/join.jsp">현재 소속팀이 없습니다.(팀가입 전)</a>
-									</p>
-
-									<h3>CHALLENGE(팀가입 후)</h3>
-
-									<h4>더보기</h4>
-									<p>
-										<a href="/DNL/team/match/challenge.jsp">더보기</a>
-									</p>
-
-									<h4>매칭 홍보 목록 페이지</h4>
-									<p>
-										<a href="/DNL/team/match/challenge.jsp">◀</a>
-									</p>
-									<p>2014년 11월 11일</p>
-									<p>
-										<a href="/DNL/team/match/challenge.jsp">▶</a>
-									</p>
-
-									<h4>매칭 홍보 목록</h4>
-									<ul>
-										<li>팀로고1</li>
-										<li>시간 : 오후 6시</li>
-										<li>장소 : 서울초등학교 운동장</li>
-									</ul>
-									<ul>
-										<li>팀로고2</li>
-										<li>시간 : 오후 7시</li>
-										<li>장소 : 경기초등학교 운동장</li>
-									</ul>
-
-									<h3>SCHEDULE</h3>
-
-									<h4>더보기</h4>
-									<p>
-										<a href="/DNL/team/match/result_bf.jsp">더보기</a>
-									</p>
-
-									<h4>주요 매칭 목록 페이지</h4>
-									<p>
-										<a href="/DNL/team/match/result_bf.jsp">◀</a>
-									</p>
-									<p>2014년 11월 11일</p>
-									<p>
-										<a href="/DNL/team/match/result_bf.jsp">▶</a>
-									</p>
-
-									<h4>주요 매칭 목록</h4>
-
-									<ul>
-										<li>팀로고1</li>
-										<li>팀로고2</li>
-										<li>1vs2</li>
-										<li>시간 : 오후 6시</li>
-										<li>장소 : 서울초등학교 운동장</li>
-									</ul>
-									<ul>
-										<li>팀로고1</li>
-										<li>팀로고2</li>
-										<li>3vs2</li>
-										<li>시간 : 오후 6시</li>
-										<li>장소 : 경기초등학교 운동장</li>
-									</ul>
-								<li>
-							</ul></li>
-
-						<li><h2>이벤트 메뉴</h2> EVENT
-							<ul>
-								<li>
-									<h3>EVENT</h3>
-									<h4>이벤트 예정 문구</h4>
-									<p>
-										<a href="/DNL/master/event/event.jsp">이벤트 오픈 예정입니다.</a>
-									</p>
-								<li>
-							</ul></li>
-
-						<li><h2>홍보 메뉴</h2> INFORM
-							<ul>
-								<li>
-
-									<h3>TEAMS</h3>
-									<h4>더보기</h4>
-									<p>
-										<a href="/DNL/team/team_ad/list.jsp">더보기</a>
-									</p>
-
-									<h4>팀홍보목록</h4>
-									<p>이전</p>
-									<ul>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고1</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고2</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고3</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고4</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고5</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고6</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고7</a></li>
-										<li><a href="/DNL/team/team_ad/detail.jsp">팀로고8</a></li>
-									</ul>
-									<p>다음</p>
-
-
-
-									<h3>PLAYERS</h3>
-									<h4>더보기</h4>
-									<p>
-										<a href="/DNL/member/ad/list.jsp">더보기</a>
-									</p>
-
-									<h4>선수홍보목록</h4>
-									<p>이전</p>
-									<ul>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진1</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진2</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진3</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진4</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진5</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진6</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진7</a></li>
-										<li><a href="/DNL/member/ad/detail.jsp">선수사진8</a></li>
-									</ul>
-									<p>다음</p>
-								<li>
-							</ul></li>
-					</ul>
-				</nav>
-
-			</section> -->
-		</header>
-
-		<body id="body">
+		<div id="body">
 
 			<div class="title">
 				<h1>CALENDAR</h1>
 			</div>
 			<div class="contents">
-				<table border="1" align="center">
-					<p align="center">
-						<a href="">◀</a>2014년 10월<a href="">▶</a>
-					</p>
-
-					<thead>
-						<tr>
-							<td>월</td>
-							<td>화</td>
-							<td>수</td>
-							<td>목</td>
-							<td>금</td>
-							<td>토</td>
-							<td>일</td>
-						</tr>
-					</thead>
-
+				<table align="center">
 					<tr>
-						<td>1</td>
-						<td>2</td>
-						<td>3</td>
-						<td>4</td>
-						<td>5</td>
-						<td>6</td>
-						<td>7</td>
+						<td><img alt="달력" src=" ../../images/calendar.png"
+							width="657" height="358"></td>
 					</tr>
-
-					<tr>
-						<td>8</td>
-						<td>9</td>
-						<td>10</td>
-						<td>11</td>
-						<td>12</td>
-						<td>13</td>
-						<td>14</td>
-					</tr>
-
-					<tr>
-						<td>15</td>
-						<td>16</td>
-						<td>17</td>
-						<td>18</td>
-						<td>19</td>
-						<td>20</td>
-						<td>21</td>
-					</tr>
-
-					<tr>
-						<td>22</td>
-						<td>23</td>
-						<td>24</td>
-						<td>24</td>
-						<td>25</td>
-						<td>26</td>
-						<td>27</td>
-					</tr>
-
-					<tr>
-						<td>28</td>
-						<td>29</td>
-						<td>30</td>
-						<td></td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-
 				</table>
-
-				<img alt="레알 마드리드" src=" "> VS <img alt="뮌헨" src=" ">
+				<table align="center">
+					<tr>
+						<td><figure>
+								<img alt="tim2" src=" ../../images/tim2.png" width="80"
+									height="80">
+								<br>
+								<figcaption>레알마드리드</figcaption>
+							</figure></td>
+						<td>VS</td>
+						<td><figure>
+								<img alt="뮌헨" src="../../images/tim4.png" width="80" height="80">
+								<br>
+								<figcaption>뮌헨</figcaption>
+							</figure></td>
+					</tr>
+				</table>
 			</div>
 
 			<div class="title">
-				<h2>득점 정보</h2>
+				<h3>득점 정보</h3>
 			</div>
-			<div class="contents">
-				<table border="1" align="center">
-					<tr>
-						<td>대한민국</td>
-						<td>VS</td>
-						<td>스위스</td>
+			<div>
+				<table id="information-score">
+					<tr class="information-score-row">
+						<td class="information-score-cell information-score-header">대한민국</td>
+						<td class="information-score-cell information-score-header">VS</td>
+						<td class="information-score-cell information-score-header">스위스</td>
 					</tr>
 
-					<tr>
-						<td>후반 13분 홍정호</td>
-						<td>득점</td>
-						<td>전반 6분 퍄팀 카사미</td>
+					<tr class="information-score-row">
+						<td class="information-score-cell">후반 13분 홍정호</td>
+						<td class="information-score-cell">득점</td>
+						<td class="information-score-cell">전반 6분 퍄팀 카사미</td>
 					</tr>
 				</table>
 
-				<table border="1" align="center">
+				//팝업
+				<table id="information-score-input">
 					<tr>
-						<td>시간<input type="text"> 선수<input type="text">
-							<input type="button" value="확인"
-							onclick="location.href='schedule_af.jsp'"></td>
+						<td>시간</td>
+						<td><input type="text"></td>
+						<td>선수</td>
+						<td><input type="text"></td>
+						<td><input type="image" src="../../images/btn_confirm.png"
+							value="확인" onclick="location.href='schedule_af.jsp'"></td>
 					</tr>
 				</table>
-
-				<img alt="팀 포지션" src=" ">
-				<ul>
-					<li>GK M.노이에르 ★★★★☆
-					<li>RB R.아바테 ★★★★☆
-					<li>LB M.마르셀로 ★★★★☆
-				</ul>
-				<input type="button" value="확인"
-					onclick="location.href='schedule_af.jsp'"> <input
-					type="button" value="취소" onclick="location.href='schedule_af.jsp'">
+				<table align="center">
+					<tr>
+						<td><img alt="포메이션" src="../../images/formation.png"
+							width="186" height="287"></td>
+						<td>
+							<ul>
+								<li>GK M.노이에르 ★★★★☆
+								<li>RB R.아바테 ★★★★☆
+								<li>LB M.마르셀로 ★★★★☆
+							</ul>
+						</td>
+					</tr>
+				</table>
+				<p align="right">
+					<input type="image" src="../../images/btn_confirm.png" value="확인"
+						onclick="location.href='상대팀에게 결과쪽지보내기'"> <input
+						type="image" src="../../images/btn_cancel.png" value="취소"
+						onclick="location.href='schedule_af.jsp'">
+				</p>
 			</div>
 
-		</body>
+		</div>
 
-		<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
+
 	</div>
 </body>
 </html>

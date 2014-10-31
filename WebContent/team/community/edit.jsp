@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div id="center">
-		<header id="header"></header>
+		<%@include file="/header.jsp"%>
 		<main id="main">
 		<div class="title">
 		<h2 >이미지 게시판 글 수정</h2>
@@ -41,12 +41,12 @@
 					<td><input type="text" name="pwd"></td>
 				</tr>
 			</table>
-			<a href="list.jsp">수정</a>
-			<a href="list.jsp">취소</a>
+			<a href="list.jsp"><img src="../../images/btn_edit.png"></a>
+			<a href="list.jsp"><img src="../../images/btn_cancel.png"></a>
 		</form>
 	</div>
 	</main>
-	<footer id="footer"></footer>
+		<%@include file="/footer.jsp"%>
 	</div>
 </body>
 </html>

@@ -6,15 +6,16 @@
 <meta charset="UTF-8">
 <title>member_ad_edit</title>
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_community_write.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<h1>선수 홍보 게시판</h1>
 		
-		<h2>선수 홍보 게시판 수정 폼</h2>
+		<h2 class="hidden">선수 홍보 게시판 수정 폼</h2>
 		
 		<form>
 			<fieldset>
-			<legend>선수 홍보 게시판 수정 필드</legend>
+			<legend class="hidden">선수 홍보 게시판 수정 필드</legend>
 			
 			<label>제목</label>
 			<input type="text" />

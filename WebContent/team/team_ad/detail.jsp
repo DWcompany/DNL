@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <title>team_ad_detail</title>
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
+<link href="../../css/layout.css" rel="stylesheet" type="text/css">
 <link href="../../team/team_ad/team_ad.css" rel="stylesheet" type="text/css">
 <link href="../../css/style_team_ad.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="/DNL/js/modernizr.js"></script>
@@ -47,9 +48,11 @@
 			<li>주전 선수 목록</li>	
 		</ul>
 	</div>
-	<a href="../../member/note/write.jsp">가입요청</a>
-	<a href="edit.jsp">수정</a>
-	<a href="list.jsp">취소</a>
+	<div class="photo_size">
+	<a href="../../member/note/write.jsp"><img src="../../images/btn_join.png"></a>
+	<a href="edit.jsp"><img src="../../images/btn_edit.png"></a>
+	<a href="list.jsp"><img src="../../images/btn_cancel.png"></a>
+	</div>
 </div>	<br>
 
 	<!-- 쓸글들 -->

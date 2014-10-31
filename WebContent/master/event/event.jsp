@@ -8,11 +8,21 @@
 
 <link href="../../css/reset.css" rel="stylesheet" type="text/css">
 <link href="../../css/layout.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_header.css" rel="stylesheet" type="text/css">
+<link href="../../css/style_footer.css" rel="stylesheet" type="text/css">
+<style>
+.contents p {
+	margin-top: 150px;
+	margin-left: 350px;
+	
+}
+</style>
 </head>
 <body>
 	<div id="center">
 
 		<%@include file="/header.jsp"%>
+
 
 		<div id="body">
 

@@ -13,7 +13,7 @@
 			 <legend>선수 검색 필드</legend>
                <label>ID</label>
                 <label>검색어</label> <input type="text">
-                 <input type="button" value="검색" onclick="location.href='player_profile.jsp'">
+                <a href="player_profile.jsp"><img src="../../images/btn_search.png"></a>
 		</fieldset>
 	</form>
 </body>
